@@ -12,17 +12,21 @@ public class Observer : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        // 玩家与观察者之间的向量
-        var direction = player.position - transform.position + Vector3.up;
-        // 创建射线
-        var ray = new Ray(transform.position, direction);
-        // 发出射线并触碰到的碰撞体
-        RaycastHit hit;
-        if (Physics.Raycast(ray,out hit))
+        if (_isInSight)
         {
-            if (hit.collider.transform == player)
+
+            // 玩家与观察者之间的向量
+            var direction = player.position - transform.position + Vector3.up;
+            // 创建射线
+            var ray = new Ray(transform.position, direction);
+            // 发出射线并触碰到的碰撞体
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
             {
-                Debug.Log("玩家进入观察者视野");
+                if (hit.collider.transform == player)
+                {
+                    Debug.Log("玩家进入观察者视野");
+                }
             }
         }
     }
