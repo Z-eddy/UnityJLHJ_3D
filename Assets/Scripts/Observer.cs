@@ -25,7 +25,8 @@ public class Observer : MonoBehaviour
             {
                 if (hit.collider.transform == player)
                 {
-                    Debug.Log("玩家进入观察者视野");
+                    // 玩家被发现
+                    gameEnding.Caught();
                 }
             }
         }

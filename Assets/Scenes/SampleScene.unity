@@ -3402,6 +3402,7 @@ MonoBehaviour:
   fadeDuration: 1
   displayImageDuration: 2
   exitBackgroundImageCanvasGroup: {fileID: 1974775372}
+  restartBackgroundImageCanvasGroup: {fileID: 1145993513}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3738,7 +3739,7 @@ GameObject:
   - component: {fileID: 1145993514}
   - component: {fileID: 1145993513}
   m_Layer: 5
-  m_Name: ExitImageBackground (1)
+  m_Name: RestartImageBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4009,7 +4010,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 623a7345ca6d38f4280b86c32ffe7c15, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 85d46c7add1129741a0d78fadba6998e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
